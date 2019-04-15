@@ -1,0 +1,30 @@
+.quizpanel{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.board{
+    z-index: 10;
+    position: relative;
+    text-align: center;
+    min-height: 100%;
+}
+.navbar{
+    flex-flow: row-reverse;
+}
+.navbar-toggler{
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+.questions{
+    background-color: lightgray;
+}
+.answers{
+    background-color: darkcyan;
+}
