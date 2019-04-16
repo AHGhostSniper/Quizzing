@@ -19,6 +19,7 @@ html,body{
     right: 1em;
     z-index: 10;
     color: gray;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.41);
 }
 .questions{
     background-color: white;
@@ -113,6 +114,7 @@ button:focus{
     border-radius: 20px;
     margin: 0 1em;
     color: #4B96AE;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.41);
     transition: color 200ms, background-color 200ms;
 }
 .answer:hover .options{
