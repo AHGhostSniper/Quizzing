@@ -13,37 +13,28 @@
     <script src="js/custom.js"></script>
 </head>
 <body>
-	<header>
-		<nav class="navbar navbar-light bg-transparent">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-					<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-						<li class="nav-item active">
-							<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Link</a>
-						</li>
-					</ul>
+	<div class="navbar-light">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+</div>
+	<section class="d-flex h-100">
+		<div class="container-fluid">
+			<div class="row d-flex h-100">
+				<div class="col-12 col-md-6 questions board">
+							<div class="questioncount">Question 1/7</div>
+							<div class="image">image</div>
+							<div class="question">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+						</div>
+						<div class="col-12 col-md-6 answers board">
+							<div class="answer-selection">Select an answer below</div>
+							<div class="answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+							<div class="answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+							<div class="answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+							<div class="answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+						</div>
 			</div>
-		</nav>
-	</header>
-
-    <section class="container-fluid row quizpanel">
-		<div class="col-12 col-md-6 questions board">
-			<h1>titulo</h1>
-			<h3>imagen</h3>
-			<h5>pregunta</h5>
-		</div>
-		<div class="col-12 col-md-6 answers board">
-			<h1>respuesta 1</h1>
-			<h1>respuesta 2</h1>
-			<h1>respuesta 3</h1>
-			<h1>respuesta 4</h1>
 		</div>
 	</section>
-	<footer></footer>
 </body>
 </html>
