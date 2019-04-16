@@ -1,11 +1,28 @@
 html,body{
     height: 100%;
 }
+@media only screen and (min-width: 768px){
+    .board{
+        padding: 5em;
+    }
+    .questions::before{
+        position: absolute;
+        right: -40px;
+        top: 100px;
+        border-width: 20px 20px 20px 20px;
+        border-color: transparent transparent transparent white;
+        border-style: solid;
+        width: 0;
+        height: 0;
+        content: "";
+        z-index: 10;
+    }
+}
 .board{
     position: relative;
     text-align: center;
     min-height: 100%;
-    padding: 5em;
+    padding: 2em;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -27,6 +44,7 @@ html,body{
 .questions{
     background-color: white;
 }
+
 .answers{
     background-color: #4B96AE;
 }
