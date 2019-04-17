@@ -1,5 +1,6 @@
 html,body{
-    height: 100%;
+    min-height: 100vh;
+    position: relative;
 }
 .board{
     text-align: center;
@@ -8,15 +9,15 @@ html,body{
 }
 .navbar-toggler{
     background-color: white;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 30px;
+    border-radius: 20px;
     position: fixed;
-    top: 1em;
-    right: 1em;
+    top: 0.2em;
+    right: 0.2em;
     z-index: 10;
     color: gray;
     box-shadow: 0 2px 3px rgba(0,0,0,0.41);
@@ -50,7 +51,7 @@ ul{
 .image{
     flex-flow: column;
     justify-content: center;
-    padding-top: 2em;
+    padding-top: 1em;
     position: relative;
 }
 .question{
@@ -72,6 +73,7 @@ ul{
     flex-flow: column ;
     justify-content: center;
     padding-top: 2em;
+    padding-bottom: 3em;
     position: relative;
     color: white;
 }
@@ -83,7 +85,6 @@ ul{
     color: white;
     display: flex;
     justify-content: left;
-    top: 10em;
     position: relative;
     padding: 2em 0;
 }
@@ -106,8 +107,9 @@ button:focus{
 }
 .options{
     background-color: white;
-    width: 60px;
-    height: 30px;
+    min-width: 40px;
+    max-width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,11 +125,11 @@ button:focus{
     transform: scale(1.2,1.2);
 }
 footer{
-    position: fixed;
+    position: absolute;
     font-size: 10px;
     color: #bbb3b3;
     font-weight: bold;
-    bottom: 5px;
+    bottom: 2px;
     padding: 0 5em;
     left: 2em;
 }
@@ -136,13 +138,24 @@ footer :hover{
     font-size: 11px;
     transition: color 200ms, font-size 200ms;
 }
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 992px){
+    .navbar-toggler{
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        top: 1em;
+        right: 1em;
+    }
     .board{
         padding: 5em;
     }
+    .image{
+        max-width: 60%;
+        margin: 0 auto;
+    }
     .questions::before{
         position: absolute;
-        right: -40px;
+        right: -39px;
         top: 100px;
         border-width: 20px 20px 20px 20px;
         border-color: transparent transparent transparent white;
@@ -155,14 +168,18 @@ footer :hover{
     .answer{
         padding: 2em;
     }
-    .options{
-        width: 40px; 
-        height: 40px; 
+    .answer-selection{
+        padding-top: 2em;
+        padding-bottom: 4em;
     }
     .optiontext{
         padding: 0.5em;
     }
     .questioncount ul li{
         padding: 0 3em;
+    }
+    footer{
+        position: fixed;
+        bottom: 5px;
     }
 }
