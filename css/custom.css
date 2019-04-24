@@ -2,6 +2,15 @@ html,body{
     min-height: 100vh;
     position: relative;
 }
+.navbar-toggler i.fa-bars{
+    transform: rotateZ(0deg);
+    transition: transform 0.5s;
+}
+.navbar-toggler i.fa-times{
+    transform: rotateZ(90deg);
+    transition: transform 0.5s;
+    color: #e91e63;
+}
 .board{
     text-align: center;
     min-height: 100%;
@@ -21,6 +30,30 @@ html,body{
     z-index: 10;
     color: gray;
     box-shadow: 0 2px 3px rgba(0,0,0,0.41);
+}
+.overlap{
+    background-color: white;
+    width: 0;
+    height: 0;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: -2000px;
+    right: -2000px;
+    z-index: 5;
+    color: gray;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.41);
+    transition: height 0.5s, width 0.5s, border-radius 0.5s;
+}
+.overlap.active{
+    height: 4000px;
+    width: 4000px;
+    top: -2000px;
+    border-radius: 50%;
+    right: -2000px;
+    transition: height 0.5s, width 0.5s, border-radius 0.5s;
 }
 .questions{
     background-color: white;
