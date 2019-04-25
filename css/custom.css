@@ -81,7 +81,7 @@ ul{
     background-color: transparent;
     border-color: transparent;
 }
-.image{
+.qimage{
     flex-flow: column;
     justify-content: center;
     padding-top: 1em;
